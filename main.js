@@ -35,3 +35,21 @@ todoForm.addEventListener("submit", function (event) {
 
 	todoForm.reset();
 });
+
+removeCompletedSubmit.addEventListener("click", function () {
+	const todoList = document.querySelectorAll("#todo-list div");
+	for (let i = 0; i < todoList.length; i++) {
+		const items = todoList[i];
+		if (items.style.textDecoration === "line-through") {
+			items.remove();
+		}
+	}
+});
+
+removeAllSubmit.addEventListener("click", function () {
+	const todoList = document.querySelectorAll("#todo-list div");
+	for (let i = 0; i < todoList.length; i++) {
+		const items = todoList[i];
+		items.remove();
+	}
+});
