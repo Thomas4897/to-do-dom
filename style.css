@@ -1,0 +1,52 @@
+body {
+	border-left: 3px solid black;
+	margin-left: 10px;
+}
+
+form {
+	padding: 10px;
+	height: 500px;
+}
+
+#add-todo-submit {
+	background-color: green;
+	color: white;
+}
+
+#remove-completed-submit {
+	background-color: orange;
+}
+
+#remove-all-submit {
+	background-color: crimson;
+	color: white;
+}
+
+input {
+	border: none;
+	border-radius: 3px;
+}
+
+#todo-input-text {
+	/* border: 3px solid lightblue; */
+	border: 1px solid lightgray;
+	border-radius: 5px;
+	width: 500px;
+	margin-bottom: 5px;
+	margin-top: 5px;
+}
+
+#todo-input-text:hover {
+	border: 3px solid rgb(134, 198, 230);
+	border-radius: 5px;
+}
+
+input:hover {
+	border: 3px solid rgba(250, 252, 253, 0.5);
+	border-radius: 5px;
+}
+
+#todo-list > div {
+	border: 1px solid lightgray;
+	padding: 2px;
+}
