@@ -10,6 +10,11 @@ form {
 	height: 500px;
 }
 
+#todo-label {
+	margin-top: -20px;
+	margin-bottom: 10px;
+}
+
 #add-todo-submit {
 	background-color: green;
 	color: white;
@@ -26,15 +31,12 @@ form {
 
 #buttons-div {
 	display: flex;
-	/* padding-right: 5px; */
 }
 
 .button {
 	border: none;
 	border-radius: 3px;
 	padding: 5px;
-	/* margin-bottom: 3px;
-	margin-top: 3px; */
 	margin-right: 3px;
 }
 
@@ -48,21 +50,24 @@ form {
 }
 
 #todo-input-text {
-	padding: 5px;
-	padding-left: 10px;
-	border: 1px solid lightgray;
-	border-radius: 3px;
-	width: 500px;
-	/* margin-top: 5px; */
-	margin-bottom: 3px;
-}
-
-#todo-input-text:hover {
+	border: 1px solid #ccc;
+	border-radius: 5px;
 	padding: 3px;
 	padding-left: 10px;
+	outline: none;
+	width: 500px;
+	margin-bottom: 3px;
+	margin-top: 3px;
+}
+
+#todo-input-text:focus {
+	padding-left: 10px;
 	border: 3px solid rgb(134, 198, 230, 0.5);
-	border-radius: 3px;
+	border-radius: 5px;
 	margin-left: -3px;
+	margin-bottom: 1px;
+	margin-top: 1px;
+	padding-left: 11px;
 }
 
 #todo-list > div {
@@ -70,5 +75,6 @@ form {
 	padding-left: 10px;
 	border: 1px solid lightgray;
 	border-radius: 2px;
+	margin-top: 3px;
 	margin-bottom: -0.5px;
 }
